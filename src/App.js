@@ -12,6 +12,15 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log({ firstName, lastName, phoneNumber, email, airFryerCost, pin });
+
+    alert("Data Printed to Console");
+
+    setFirstName('');
+    setLastName('');
+    setPhoneNumber('');
+    setEmail('');
+    setAirFryerCost('');
+    setPin('');
   };
 
   return (
