@@ -2,37 +2,72 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-container {
+  max-width: 800px;
+  margin: 20px auto;
+  font-family: 'Helvetica Neue', sans-serif;
+  padding: 20px;
+  background: #222;
+  border-radius: 10px;
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.contact-heading {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-row {
   display: flex;
-  flex-direction: column;
+  margin-bottom: 20px;
+  font-family: 'Helvetica Neue', sans-serif;
+  padding: 10px;
+  border-radius: 8px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.form-row:nth-child(even) {
+  background-color: #479daf;
+}
+
+.form-row:nth-child(odd) {
+  background-color: rgba(46, 52, 54, 0.8);
+}
+
+.label {
+  flex: 1;
+  font-size: 1.1em;
+  padding-right: 15px;
+  min-width: 150px;
+  font-family: Raleway,sans-serif;
+}
+
+.input {
+  flex: 2;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  font-size: 1em;
+}
+
+.submit-btn {
+  background-color: rgba(71,157,175,.9);
+  padding: 12px 24px;
+  border: 1px solid #fff;
+  font-family: Raleway,sans-serif;
+  font-weight: none;
   color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.submit-btn:hover {
+  color: #337ab7;
+  background-color: #0f5968;
+  border: 1px solid #337ab7;
 }
